@@ -965,3 +965,49 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
         }
+
+        /* Partners Logo Section - Clean, Static & Large */
+        .partners-section {
+            padding: 4.5rem 5%;
+            background: rgba(8, 7, 13, 0.25);
+            border-top: 1px solid var(--card-border);
+            border-bottom: 1px solid var(--card-border);
+            position: relative;
+        }
+
+        .marquee-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .marquee-title span {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .partners-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4.5rem;
+        }
+
+        .partners-grid img {
+            height: 70px;
+            width: auto;
+            max-width: 170px;
+            object-fit: contain;
+            filter: grayscale(1) brightness(0) invert(1) opacity(0.55);
+            transition: var(--transition);
+        }
+
+        .partners-grid img:hover {
+            filter: grayscale(0) brightness(1) opacity(1);
+            transform: scale(1.1);
+        }
