@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة ريفو | أسرار واستراتيجيات التسويق ونمو الأعمال</title>
+    <meta name="description" content="اقرأ أحدث المقالات والنصائح الحصرية في مجالات السيو (SEO)، الإعلانات الممولة، كتابة المحتوى، وأتمتة التسويق لتنمية مبيعات شركتك وتصدر منافسيك.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Shared Web Components -->
+    <script src="js/components.js" defer></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Header / Navbar -->
+    <!-- Header / Navbar Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <h1>مدونة ريفو | <span>أسرار نمو الشركات</span></h1>
+            <p>مقالات، استراتيجيات، ونصائح عملية حصرية لمساعدتك على مضاعفة مبيعاتك وتصدر محركات البحث بأقل تكلفة تسويقية ممكنة.</p>
+            
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث عن المقالات أو المواضيع..." onkeyup="filterArticles()">
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active" onclick="filterCategory('all', this)">الكل</span>
+                    <span class="filter-tag" onclick="filterCategory('seo', this)">السيو (SEO)</span>
+                    <span class="filter-tag" onclick="filterCategory('paid-ads', this)">الإعلانات الممولة</span>
+                    <span class="filter-tag" onclick="filterCategory('email-marketing', this)">التسويق بالإيميل</span>
+                    <span class="filter-tag" onclick="filterCategory('copywriting', this)">كتابة المحتوى</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="blog-section">
+        <div class="blog-grid" id="blogGrid">
+            
+            <!-- Article 1: SEO -->
+            <div class="blog-card" data-category="seo" data-title="سيو seo مبيعات ترافيك">
+                <div class="blog-img-placeholder">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span class="blog-badge">تحسين محركات البحث</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 20 مايو 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 6 دقائق قراءة</span>
+                    </div>
+                    <h3>لماذا يفشل خبراء السيو (SEO) في ترجمة الزوار إلى مبيعات حقيقية؟</h3>
+                    <p>يعتقد الكثيرون أن الحصول على ترتيب في الصفحة الأولى لجوجل يعني بالضرورة زيادة المبيعات. في هذا المقال، نكشف السر وراء غياب المبيعات رغم وجود ترافيك عالي وكيف تصلح ذلك فوراً.</p>
+                    <a href="Blogs/blog-post-seo.html" class="read-more-btn">اقرأ المقال بالكامل <i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+            </div>
+
+            <!-- Article 2: Paid Ads -->
+            <div class="blog-card" data-category="paid-ads" data-title="تسويق 2026 قواعد إعلانات ممولة">
+                <div class="blog-img-placeholder">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span class="blog-badge">الإعلانات الممولة</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 18 مايو 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 5 دقائق قراءة</span>
+                    </div>
+                    <h3>قواعد التسويق الرقمي في 2026: كيف تغيرت اللعبة تماماً؟</h3>
+                    <p>مع تطور الذكاء الاصطناعي وتغير سلوك المستهلك، تغيرت قواعد الإعلانات الممولة والاستهداف. تعرف على أهم 3 استراتيجيات أساسية يجب تطبيقها هذا العام لتجنب إهدار ميزانيتك.</p>
+                    <a href="Blogs/blog-post-marketing-2026.html" class="read-more-btn">اقرأ المقال بالكامل <i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+            </div>
+
+            <!-- Article 3: Email Marketing -->
+            <div class="blog-card" data-category="email-marketing" data-title="بريد إلكتروني إيميل ذكية أتمتة">
+                <div class="blog-img-placeholder">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span class="blog-badge">أتمتة التسويق</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 15 مايو 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 7 دقائق قراءة</span>
+                    </div>
+                    <h3>الخطة الذكية للتسويق عبر الإيميل التي تضمن بقاء عملائك مدى الحياة</h3>
+                    <p>يعتبر التسويق عبر البريد الإلكتروني هو الأعلى تحقيقاً للعائد المالي (ROI). نقدم لك الدليل المتكامل لوضع خطة إيميلات مؤتمتة تبني علاقة ثقة وتضمن تكرار الشراء دون تكلفة إضافية.</p>
+                    <a href="Blogs/blog-post-email-marketing.html" class="read-more-btn">اقرأ المقال بالكامل <i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+            </div>
+
+            <!-- Article 4: Copywriting -->
+            <div class="blog-card" data-category="copywriting" data-title="كتابة محتوى إعلاني كوبي رايتنج أسرار">
+                <div class="blog-img-placeholder">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span class="blog-badge">كتابة الإعلانات</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 10 مايو 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 4 دقائق قراءة</span>
+                    </div>
+                    <h3>أسرار الـ Copywriting: كيف تكتب نصاً إعلانياً يدفع العميل للشراء فوراً؟</h3>
+                    <p>الكلمات هي التي تبيع! تعلم أهم التكتيكات السحرية في علم النفس الإعلاني لصياغة نصوص وعناوين تجذب انتباه القارئ وتثير لديه الرغبة وتوجهه مباشرة نحو اتخاذ إجراء الشراء الفوري.</p>
+                    <a href="Blogs/blog-post-copywriting.html" class="read-more-btn">اقرأ المقال بالكامل <i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+            </div>
+
+            <!-- Empty State element -->
+            <div class="no-results" id="noResults">
+                <i class="fa-regular fa-face-frown"></i>
+                <h3>لا توجد مقالات تطابق بحثك</h3>
+                <p>جرب استخدام كلمات بحث أخرى أو تصفح الأقسام الرئيسية بالأعلى.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Categories & Search Filtering Logic -->
+    <script src="js/blog.js" defer></script>
+</body>
+</html>
