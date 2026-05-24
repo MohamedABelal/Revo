@@ -1011,3 +1011,297 @@
             filter: grayscale(0) brightness(1) opacity(1);
             transform: scale(1.1);
         }
+
+
+/* =====================================================
+   RESPONSIVE BREAKPOINTS — Home Page
+   ===================================================== */
+
+/* ── Tablet (≤ 991px) ─────────────────────────────── */
+@media (max-width: 991px) {
+
+    /* Hero */
+    .hero {
+        padding: 7rem 5% 4rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.15rem;
+    }
+
+    /* Section headers */
+    .section-header h2 {
+        font-size: 2.4rem;
+    }
+    .section-header {
+        margin-bottom: 3.5rem;
+    }
+
+    /* Services grid → 2 columns */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Pricing → stack */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Testimonials → 1 column */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Approach timeline → 2 columns */
+    .approach-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact grid already has breakpoint */
+
+    /* Blog grid → 1 column */
+    .latest-blog-grid {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    /* Partners logos — reduce gap */
+    .partners-grid {
+        gap: 3rem;
+    }
+    .partners-grid img {
+        height: 55px;
+    }
+
+    /* Sections padding */
+    .services,
+    .pricing,
+    .portfolio,
+    .approach,
+    .faq,
+    .contact,
+    .latest-blog {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* ── Mobile (≤ 768px) ─────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero {
+        padding: 6rem 5% 3.5rem;
+        min-height: auto;
+    }
+    .hero h1 {
+        font-size: 2.4rem;
+        line-height: 1.25;
+    }
+    .hero p {
+        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero-buttons a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Badge */
+    .badge {
+        font-size: 0.78rem;
+        padding: 0.45rem 1rem;
+    }
+
+    /* Section header */
+    .section-header h2 {
+        font-size: 1.9rem;
+    }
+    .section-header p {
+        font-size: 1rem;
+    }
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    /* Services → 1 column */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        padding: 2rem 1.8rem;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+        max-width: 100%;
+    }
+    .pricing-card {
+        padding: 2.5rem 2rem;
+    }
+    .pricing-header p {
+        height: auto;
+    }
+
+    /* Approach → 2 columns on small mobile too (then → 1) */
+    .approach-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 1.4rem 1.5rem;
+        font-size: 1rem;
+    }
+    .faq-question h3 {
+        font-size: 0.95rem;
+    }
+    .faq-answer {
+        padding: 0 1.5rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        padding: 2.5rem 1.5rem;
+        gap: 2.5rem;
+    }
+    .contact-info-side h2 {
+        font-size: 2rem;
+    }
+
+    /* Blog grid */
+    .latest-blog-grid {
+        max-width: 100%;
+    }
+    .blog-content {
+        padding: 1.5rem;
+    }
+
+    /* Partners */
+    .partners-grid {
+        gap: 2rem;
+    }
+    .partners-grid img {
+        height: 45px;
+        max-width: 130px;
+    }
+    .partners-section {
+        padding: 3.5rem 5%;
+    }
+
+    /* Sections padding */
+    .services,
+    .pricing,
+    .portfolio,
+    .approach,
+    .faq,
+    .contact,
+    .latest-blog {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* ── Small Mobile (≤ 480px) ──────────────────────── */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero h1 {
+        font-size: 1.95rem;
+    }
+    .hero p {
+        font-size: 0.97rem;
+    }
+
+    /* Section headers */
+    .section-header h2 {
+        font-size: 1.65rem;
+    }
+    .section-header p {
+        font-size: 0.92rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 1.8rem 1.5rem;
+    }
+    .service-card h3 {
+        font-size: 1.25rem;
+    }
+    .service-card-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    /* Pricing */
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+    .price {
+        font-size: 1.8rem;
+    }
+
+    /* Approach → 1 column */
+    .approach-timeline {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        padding: 2rem 1.2rem;
+    }
+    .contact-info-side h2 {
+        font-size: 1.7rem;
+    }
+    .contact-form-side {
+        padding: 1.8rem 1.2rem;
+    }
+
+    /* Partners */
+    .partners-grid {
+        gap: 1.5rem;
+    }
+    .partners-grid img {
+        height: 38px;
+        max-width: 110px;
+    }
+
+    /* Form */
+    .form-control {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+    .submit-btn {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    /* Sections padding */
+    .services,
+    .pricing,
+    .portfolio,
+    .approach,
+    .faq,
+    .contact,
+    .latest-blog {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+}
